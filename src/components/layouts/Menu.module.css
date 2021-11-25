@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+.menu {
+  font-family: "Nanum Pen Script", sans-serif;
+  width: 500px;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu ul li {
+  font-size: 2rem;
+  padding-bottom: 3px;
+}
+
+.menu ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

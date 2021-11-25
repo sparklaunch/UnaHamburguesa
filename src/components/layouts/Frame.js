@@ -1,10 +1,11 @@
 import Brand from "./Brand";
+import Menu from "./Menu";
 
-function Frame(props) {
+function Frame() {
   return (
     <div>
       <Brand />
-      {props.children}
+      <Menu />
     </div>
   );
 }
