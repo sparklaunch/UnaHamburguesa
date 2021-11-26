@@ -4,10 +4,11 @@ import BurgersPage from "../pages/BurgersPage";
 import AddressPage from "../pages/AddressPage";
 import AboutPage from "../pages/AboutPage";
 import burgers from "../dummyData";
+import BurgerContextProvider, { BurgerContext } from "../store/BurgerContext";
 
 function App() {
   return (
-    <div>
+    <BurgerContextProvider value={BurgerContext}>
       <BrowserRouter>
         <Frame />
         <Routes>
@@ -16,7 +17,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </BurgerContextProvider>
   );
 }
 
