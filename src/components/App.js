@@ -3,6 +3,7 @@ import Frame from "./layouts/Frame";
 import BurgersPage from "../pages/BurgersPage";
 import AddressPage from "../pages/AddressPage";
 import AboutPage from "../pages/AboutPage";
+import burgers from "../dummyData";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Frame />
         <Routes>
-          <Route path="/" element={<BurgersPage />} />
+          <Route path="/" element={<BurgersPage data={burgers} />} />
           <Route path="/address" element={<AddressPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>

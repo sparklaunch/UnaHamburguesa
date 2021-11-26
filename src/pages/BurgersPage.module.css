@@ -1,0 +1,13 @@
+.burgers {
+}
+
+.burgers ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.burgers ul li {
+  display: flex;
+  justify-content: center;
+}
