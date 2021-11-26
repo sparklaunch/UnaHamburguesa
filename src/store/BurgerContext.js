@@ -1,7 +1,8 @@
 import { createContext } from "react";
 
 export const BurgerContext = createContext({
-  selectedBurgers: []
+  selectedBurgers: [],
+  setSelectedBurgers: () => {}
 });
 
 function BurgerContextProvider(props) {

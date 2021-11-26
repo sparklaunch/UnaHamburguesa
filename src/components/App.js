@@ -4,11 +4,14 @@ import BurgersPage from "../pages/BurgersPage";
 import AddressPage from "../pages/AddressPage";
 import AboutPage from "../pages/AboutPage";
 import burgers from "../dummyData";
-import BurgerContextProvider, { BurgerContext } from "../store/BurgerContext";
+import { BurgerContext } from "../store/BurgerContext";
+import { useState } from "react";
 
 function App() {
+  const [selectedBurgers, setSelectedBurgers] = useState([]);
+  const value = { selectedBurgers, setSelectedBurgers };
   return (
-    <BurgerContextProvider value={BurgerContext}>
+    <BurgerContext.Provider value={value}>
       <BrowserRouter>
         <Frame />
         <Routes>
@@ -17,7 +20,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
-    </BurgerContextProvider>
+    </BurgerContext.Provider>
   );
 }
 
