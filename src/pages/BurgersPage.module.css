@@ -1,13 +1,17 @@
 .burgers {
+  width: 800px;
+  margin: auto;
 }
 
 .burgers ul {
   display: grid;
   list-style: none;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
 }
 
 .burgers ul li {
   display: flex;
   justify-content: center;
+  align-items: center;
 }

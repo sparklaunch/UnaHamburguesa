@@ -1,2 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
 .burgerItem {
+  font-family: "Nanum Pen Script", sans-serif;
+  margin: 10px;
+}
+
+.burgerItem img {
+  width: 200px;
+}
+
+.burgerItem .productName {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.burgerItem .price {
+  text-align: center;
 }
