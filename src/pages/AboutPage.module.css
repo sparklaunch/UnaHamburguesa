@@ -1,0 +1,19 @@
+.aboutPage {
+  width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.aboutPage > .aboutImage > img {
+  width: 100%;
+}
+
+.aboutPage > .content > h2 {
+  margin-bottom: 30px;
+}
+
+.aboutPage > .content > p {
+  text-align: justify;
+}
