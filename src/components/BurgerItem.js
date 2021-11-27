@@ -6,8 +6,18 @@ function BurgerItem(props) {
   const { id, nameKor, nameEng, price } = props.data;
   const { selectedBurgers, setSelectedBurgers } = useContext(BurgerContext);
   function burgerItemClickHandler() {
-    const selectedBurger = props.data;
-    setSelectedBurgers((previous) => [...previous, selectedBurger]);
+    const selectedBurger = nameEng;
+    setSelectedBurgers((previous) => {
+      if (!previous[selectedBurger]) {
+        const copy = { ...previous };
+        copy[selectedBurger] = 1;
+        return copy;
+      } else {
+        const copy = { ...previous };
+        copy[selectedBurger] += 1;
+        return copy;
+      }
+    });
   }
   return (
     <div className={classes.burgerItem} onClick={burgerItemClickHandler}>

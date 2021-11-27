@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+.emptyOrders {
+  margin-top: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  align-items: flex-end;
+  background-color: #fedd00;
+  opacity: 0.8;
+  font-family: "Nanum Pen Script", sans-serif;
+}
+
+.emptyOrders h3 {
+  position: sticky;
+  line-height: 80px;
+  font-size: 3rem;
+}

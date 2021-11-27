@@ -8,7 +8,7 @@ import { BurgerContext } from "../store/BurgerContext";
 import { useState } from "react";
 
 function App() {
-  const [selectedBurgers, setSelectedBurgers] = useState([]);
+  const [selectedBurgers, setSelectedBurgers] = useState({});
   const value = { selectedBurgers, setSelectedBurgers };
   return (
     <BurgerContext.Provider value={value}>
