@@ -3,7 +3,10 @@ import OrderList from "./OrderList";
 
 function Orders(props) {
   const orders = props.data;
-  if (orders) {
+  function isEmptyObject(object) {
+    return Object.keys(object).length === 0 && object.constructor === Object;
+  }
+  if (!isEmptyObject(orders)) {
     return <OrderList orders={orders} />;
   } else {
     return (

@@ -1,10 +1,22 @@
 import classes from "./OrderList.module.css";
 import OrderListItem from "./OrderListItem";
+import Total from "./Total";
 
-function OrderList(props) {
-  const orders = props.orders;
-  console.log(orders);
-  return <div className={classes.orderList}></div>;
+function OrderList({ orders }) {
+  const keys = Object.keys(orders);
+  return (
+    <div className={classes.orderList}>
+      <h3>주문 목록</h3>
+      <ul>
+        {keys.map((key, index) => (
+          <li key={index}>
+            <OrderListItem name={key} quantity={orders[key]} />
+          </li>
+        ))}
+      </ul>
+      <Total />
+    </div>
+  );
 }
 
 export default OrderList;

@@ -1,9 +1,10 @@
 import classes from "./OrderListItem.module.css";
 
-function OrderListItem({ order }) {
+function OrderListItem({ name, quantity }) {
   return (
     <div className={classes.orderListItem}>
-      <p>{order.nameKor}</p>
+      <p>{name}</p>
+      <p>{quantity}</p>
     </div>
   );
 }

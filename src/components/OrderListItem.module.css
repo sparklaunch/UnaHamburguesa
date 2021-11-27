@@ -1,4 +1,7 @@
 .orderListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .orderListItem p {
