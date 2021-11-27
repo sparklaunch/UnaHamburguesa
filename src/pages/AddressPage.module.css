@@ -1,0 +1,19 @@
+.addressPage {
+  width: 800px;
+  margin: auto;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.addressPage > .map > img {
+  width: 100%;
+}
+
+.addressPage > .content > h2 {
+  margin-bottom: 30px;
+}
+
+.addressPage > .content > p {
+  text-align: justify;
+}
