@@ -1,15 +1,19 @@
-.orderListItem {
+.total {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  font-weight: bold;
 }
 
-.orderListItem p {
+.total > .totals > p {
   font-size: 2rem;
 }
 
-.orderListItem > .right {
-  display: flex;
+.total > .right {
   width: 200px;
+  display: flex;
   justify-content: space-between;
+}
+
+.total p {
+  font-size: 2rem;
 }

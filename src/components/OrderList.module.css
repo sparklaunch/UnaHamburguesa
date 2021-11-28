@@ -1,5 +1,6 @@
 .orderList {
   margin-top: 50px;
+  margin-bottom: 50px;
   padding: 30px;
   border-radius: 10px;
   background-color: #fedd00;
@@ -20,4 +21,9 @@
 
 .orderList > ul > li {
   display: block;
+}
+
+.orderList > hr {
+  border-color: black;
+  margin: 30px 0;
 }

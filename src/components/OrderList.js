@@ -14,6 +14,7 @@ function OrderList({ orders }) {
           </li>
         ))}
       </ul>
+      <hr />
       <Total />
     </div>
   );
