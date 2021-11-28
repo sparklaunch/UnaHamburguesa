@@ -4,7 +4,7 @@ import { BurgerContext } from "../store/BurgerContext";
 import classes from "./Total.module.css";
 
 function Total() {
-  const { selectedBurgers, setSelectedBurgers } = useContext(BurgerContext);
+  const { selectedBurgers } = useContext(BurgerContext);
   const totals = Object.values(selectedBurgers).reduce(
     (previous, current) => previous + current,
     0

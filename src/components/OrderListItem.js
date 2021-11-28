@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { BurgerContext } from "../store/BurgerContext";
 
 function OrderListItem({ name, quantity }) {
-  const { selectedBurgers, setSelectedBurgers } = useContext(BurgerContext);
+  const { setSelectedBurgers } = useContext(BurgerContext);
   const theBurger = burgers.find((burger) => burger.nameEng === name);
   function removeHandler() {
     const target = theBurger.nameEng;
