@@ -10,6 +10,17 @@
 
 .orderListItem > .right {
   display: flex;
-  width: 200px;
+  width: 300px;
   justify-content: space-between;
+}
+
+.orderListItem > .right > .removeButton {
+  cursor: pointer;
+  color: red;
+  font-size: 2rem;
+  transition: transform 0.3s;
+}
+
+.orderListItem > .right > .removeButton:hover {
+  transform: scale(1.5);
 }
